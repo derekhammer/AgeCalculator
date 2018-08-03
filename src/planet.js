@@ -11,50 +11,62 @@ export class Planet
   }
   mercury()
   {
-    this.planetAge = this.earthAge * .24;
-    this.planetExpect = 19.44;
+    let age = (this.earthAge / .24).toFixed(2);
+    this.planetAge = parseFloat(age);
+    this.planetExpect = 81 / .24;
     if(this.planetAge > this.planetExpect)
     {
-      this.yearsLeft = this.planetAge - this.planetExpect;
+      let left = (this.planetAge - this.planetExpect).toFixed(2);
+      this.yearsLeft = parseFloat(left);
       this.oldCheck = true;
     }else{
-      this.yearsLeft = this.planetExpect - this.planetAge;
+      let left = (this.planetExpect - this.planetAge).toFixed(2);
+      this.yearsLeft = parseFloat(left);
     }
   }
   venus()
   {
-    this.planetAge = this.earthAge * .62;
-    this.planetExpect = 50.22;
+    let age = (this.earthAge / .62).toFixed(2);
+    this.planetAge = parseFloat(age);
+    this.planetExpect = 81 / .62;
     if(this.planetAge > this.planetExpect)
     {
-      this.yearsLeft = this.planetAge - this.planetExpect;
+      let left = (this.planetAge - this.planetExpect).toFixed(2);
+      this.yearsLeft = parseFloat(left);
       this.oldCheck = true;
     }else{
-      this.yearsLeft = this.planetExpect - this.planetAge;
+      let left = (this.planetExpect - this.planetAge).toFixed(2);
+      this.yearsLeft = parseFloat(left);
     }
   }
   mars()
   {
-    this.planetAge = this.earthAge * 1.88;
-    this.planetExpect = 19.44;
+    let age = (this.earthAge / 1.88).toFixed(2);
+    this.planetAge = parseFloat(age);
+    this.planetExpect = 81 / 1.88;
     if(this.planetAge > this.planetExpect)
     {
-      this.yearsLeft = this.planetAge - this.planetExpect;
+      let left = (this.planetAge - this.planetExpect).toFixed(2);
+      this.yearsLeft = parseFloat(left);
       this.oldCheck = true;
     }else{
-      this.yearsLeft = this.planetExpect - this.planetAge;
+      let left = (this.planetExpect - this.planetAge).toFixed(2);
+      this.yearsLeft = parseFloat(left);
     }
   }
   jupiter()
   {
-    this.planetAge = this.earthAge * 11.86;
-    this.planetExpect = 19.44;
+    let age = (this.earthAge / 11.86).toFixed(2);
+    this.planetAge = parseFloat(age);
+    this.planetExpect = 81 / 11.86;
     if(this.planetAge > this.planetExpect)
     {
-      this.yearsLeft = this.planetAge - this.planetExpect;
+      let left = (this.planetAge - this.planetExpect).toFixed(2);
+      this.yearsLeft = parseFloat(left);
       this.oldCheck = true;
     }else{
-      this.yearsLeft = this.planetExpect - this.planetAge;
+      let left = (this.planetExpect - this.planetAge).toFixed(2);
+      this.yearsLeft = parseFloat(left);
     }
-  }
+}
 }

@@ -36,7 +36,6 @@ describe('Planet', function(){
     let testPerson = new Planet(29,0,0,0,false);
     testPerson.mercury();
     expect(216.67).toEqual(testPerson.yearsLeft);
-    //I do not like this but i cannot get .toFixed(2) to work OR ceil() to work!
     expect(false).toEqual(testPerson.oldCheck);
   });
   it('should correctly identify how far past expiration date you are', function()
@@ -46,4 +45,10 @@ describe('Planet', function(){
     expect(7.44).toEqual(testPerson.yearsLeft);
     expect(true).toEqual(testPerson.oldCheck);
   });
+  it('should convert years to seconds', function(){
+    let testPerson = new Planet(50,0,0,0,false);
+    testPerson.seconds();
+    expect(1576800000).toEqual(testPerson.earthAge);
+  });
+  
 });

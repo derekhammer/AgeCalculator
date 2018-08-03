@@ -69,4 +69,9 @@ export class Planet
       this.yearsLeft = parseFloat(left);
     }
 }
+  seconds()
+  {
+    this.earthAge = this.earthAge * 31536000;
+    }
+    
 }
